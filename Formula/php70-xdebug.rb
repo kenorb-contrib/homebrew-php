@@ -15,6 +15,9 @@ class Php70Xdebug < AbstractPhp70Extension
     sha256 "e38f92cbf45f2ff4093338f05e5d50872f2775a3a72e7d715790e16cb0119051" => :yosemite
   end
 
+  option "enable-debug", "Compile with debugging symbols"
+  option "disable-debug", "Compile without debugging symbols (default)"
+
   def extension_type
     "zend_extension"
   end
